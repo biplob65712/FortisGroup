@@ -1,0 +1,22 @@
+﻿@model EditItemVM 
+
+<form method="post" style="margin:30px auto; width:500px;">
+    <input type="hidden" asp-for="ID" />
+    <div class="form-group">
+        &nbsp;<label for="Name">Name</label>
+        <input type="text" class="form-control" asp-for="Name" placeholder="Name..." style="text-align:center;">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        &nbsp;<label for="Status">Status</label>
+        <input type="text" class="form-control" asp-for="Status" placeholder="Status..." style="text-align:center;">
+        <span asp-validation-for="Status"></span>
+    </div>
+
+    <br />
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+
+</form>
